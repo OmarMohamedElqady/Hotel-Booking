@@ -1,0 +1,29 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="create_user_table" author="liquibase">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="users" />
+            </not>
+        </preConditions>
+        <sqlFile path="db/changelog/sql/users_v.0.sql" />
+    </changeSet>
+
+    <changeSet id="insert_data_users_tbl" author="liquibase">
+        <sqlFile path="db/changelog/sql/users_v.1.sql" />
+    </changeSet>
+
+    <changeSet id="contextfilterTest" author="omar" context="development">
+        <createTable tableName="test_table">
+            <column name="id" type="int">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="name" type="varchar(255)" />
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
