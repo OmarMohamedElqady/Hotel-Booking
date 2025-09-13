@@ -1,0 +1,24 @@
+footer {
+    background: linear-gradient(135deg, #333, #555);
+    color: #f0e8e8;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    box-shadow: 0px -3px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+footer span {
+    font-weight: bold;
+    color: #847e2c; 
+    transition: color 0.3s ease;
+}
+
+footer span:hover {
+    color: #635400; 
+}

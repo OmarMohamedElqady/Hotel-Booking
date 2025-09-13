@@ -1,0 +1,30 @@
+.container {
+    padding-bottom: 2%;
+}
+
+h2 {
+    color: #007f86;
+    display: flex;
+    justify-content: center;
+    /* font-weight: 800; */
+    font-size: 30px;
+
+}
+
+.filter {
+    margin-left: 5rem;
+}
+
+label {
+    color: #007f86;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+select {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}

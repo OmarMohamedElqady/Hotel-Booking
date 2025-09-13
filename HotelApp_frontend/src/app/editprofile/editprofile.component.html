@@ -1,0 +1,16 @@
+<div class="profile">
+    <h2>Edit Profile</h2>
+
+    <p *ngIf="error" class="error" >{{error}}</p>
+
+    <div *ngIf="user">
+        <p><strong>First Name:</strong>{{user.firstName}}</p>
+        <p><strong>Last Name:</strong>{{user.lastName}}</p>
+        <p><strong>Email:</strong>{{user.email}}</p>
+        <p><strong>Phone Number:</strong>{{user.phoneNumber}}</p>
+
+        <button (click)="handleDeleteProfile()">Delete My Account</button>
+
+    </div>
+
+</div>

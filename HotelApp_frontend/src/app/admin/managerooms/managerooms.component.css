@@ -1,0 +1,23 @@
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007f86;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    float: right;
+    margin-right: 70px;
+    font-weight: 600;
+}
+
+select {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}

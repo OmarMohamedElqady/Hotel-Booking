@@ -1,0 +1,306 @@
+/* General reset and typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.details-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Loading Container */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.loading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Success and Error Messages */
+.success-message {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #991b1b;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Room Title */
+.room-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Room Image */
+.room-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+
+/* Room Details Info */
+.details-info {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.details-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.details-info p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+.details-info p strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Booking Info Section */
+.booking-info {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Book Now Button */
+.book-now-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.book-now-button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.book-now-button:active {
+  transform: translateY(0);
+}
+
+/* Date Picker Container */
+.date-picker-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.date-picker label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.date-picker input[type="date"] {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #1f2937;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease;
+}
+
+.date-picker input[type="date"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Proceed Button */
+.proceed-button {
+  padding: 0.75rem;
+  background-color: #10b981;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.proceed-button:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+.proceed-button:active {
+  transform: translateY(0);
+}
+
+/* Booking Preview Container */
+.preview-container {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 1.5rem;
+}
+
+.preview-container h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.preview-container p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+.preview-container p strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Confirm and Cancel Buttons */
+.confirm-booking-button,
+.cancel-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.confirm-booking-button {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.confirm-booking-button:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+.confirm-booking-button:active {
+  transform: translateY(0);
+}
+
+.cancel-button {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.cancel-button:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+}
+
+.cancel-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .details-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .room-title {
+    font-size: 1.5rem;
+  }
+
+  .room-image {
+    max-height: 300px;
+  }
+
+  .details-info h3 {
+    font-size: 1.25rem;
+  }
+
+  .preview-container h3 {
+    font-size: 1.1rem;
+  }
+
+  .book-now-button,
+  .proceed-button,
+  .confirm-booking-button,
+  .cancel-button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}

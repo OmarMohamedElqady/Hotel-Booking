@@ -1,0 +1,69 @@
+<div class="container">
+    <h2>Add New Room</h2>
+    
+    <div class="error" *ngIf="error">{{ error }}</div>
+    <div class="success" *ngIf="success">{{ success }}</div>
+    
+    <div class="room-form">
+        <div class="form-group">
+            <div *ngIf="preview">
+                <img [src]="preview" alt="Room Preview">
+            </div>
+            <input type="file" name="roomPhoto"  (change)="handleFileChange($event)">
+        </div>
+
+        <div class="form-group">
+            <label>Room Type</label>
+            <select [(ngModel)]="roomDetails.type" (change)="handleRoomTypeChange($event)">
+                <option value="">Select a room type</option>
+                <option *ngFor="let type of roomTypes" [value]="type">{{ type }}</option>
+            </select>
+        </div>
+
+        
+    <div class="form-group">
+            <label>Room Price</label>
+            <input
+            type="number"
+            name="pricePerNight"
+            [(ngModel)]="roomDetails.pricePerNight"
+            (input)="handleChange($event)"
+            >
+        </div>
+
+        
+    <div class="form-group">
+            <label>Room Capacity</label>
+            <input
+            type="number"
+            name="capacity"
+            [(ngModel)]="roomDetails.capacity"
+            (input)="handleChange($event)"
+            >
+        </div>
+    <div class="form-group">
+            <label>Room Number</label>
+            <input
+            type="number"
+            name="roomNumber"
+            [(ngModel)]="roomDetails.roomNumber"
+            (input)="handleChange($event)"
+            >
+        </div>
+
+
+            <div class="form-group">
+            <label>Room Description</label>
+            <textarea
+            name="description"
+            [(ngModel)]="roomDetails.description"
+            (input)="handleChange($event)"
+            ></textarea>
+        </div>
+
+        <button (click)="addRoom()">Add Room</button>
+     
+    </div>
+
+
+</div>

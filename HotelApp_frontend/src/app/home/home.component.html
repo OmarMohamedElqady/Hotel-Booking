@@ -1,0 +1,72 @@
+<div class="home">
+    <header>
+        <img src="/assets/pexels-hbozman-1058759.jpg" alt="Hotel">
+        <div class="overlay"></div>        
+        <div class="overlay-content">
+            <h1>Welcome to <span class="color">Miramare Hotel</span></h1>
+            <h3>Step into a haven of comfort and care</h3>
+        </div>
+    </header>
+
+    <app-roomsearch
+        (searchResult)="handleSearchResult($event)"
+    ></app-roomsearch>
+
+    <app-roomresult [roomSearchResults]="searchResults"></app-roomresult>
+
+    <h4><a class="rooms" href="/rooms">All Rooms</a></h4>
+
+    <h2>Services at <span class="color">Miramare Hotel</span> </h2>
+
+    <section>
+        <div class="card">
+            <img src="/assets/pexels-pixabay-261102.jpg" alt="Air conditioning">
+            <div class="details">
+                <h3 class="title">Air conditioning</h3>
+                <p class="description">
+                    Stay cool and comfortable throughout your stay our individually
+                    controlled in-room air conditioning.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/pexels-pixabay-261102.jpg" alt="Mini Bar" />
+            <div class="details">
+                <h3 class="title">Luxury Refreshments</h3>
+                <p class="description">
+                    Enjoy a conevient selection of beverages and snacks stocked in your 
+                    room's mini bar with no additional cost.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/pexels-pixabay-261102.jpg" alt="Parking">
+            <div class="details">
+                <h3 class="title">Parking</h3>
+                <div class="description">
+                    We offer on-site parking for your convenience. Please inquire about 
+                    valet parking options if available.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/pexels-pixabay-261102.jpg" alt="Wifi" />
+            <div class="details">
+                <h3 class="title">WiFi</h3>
+                <p class="description">
+                    Stay connected throughout your stay with complimentary high-speed 
+                    Wi-Fi access available in all guest rooms and public areas.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    
+</div>
+
+
+
+
+

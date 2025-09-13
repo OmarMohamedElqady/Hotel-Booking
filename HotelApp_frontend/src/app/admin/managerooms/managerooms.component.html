@@ -1,0 +1,27 @@
+<div class="all-rooms">
+
+
+
+
+    <div class="filter-div">
+        <div class="filter-child">
+            <label>Filter by Room Type: </label>
+            <select [(ngModel)]="selectedRoomType" (change)="handleRoomTypeChange($event)">
+                <option value="">All</option>
+                <option *ngFor="let type of roomTypes" [value]="type">{{ type }}</option>
+            </select>
+            <button (click)="navigateToAddRoom()">Add Room</button>
+        </div>
+    </div>
+
+    <app-roomresult [roomSearchResults]="currentRoom"></app-roomresult>
+
+    <app-pagination
+        [roomPerPage]="roomsPerPage"
+        [totalRooms]="filteredRooms.length"
+        [currentPage]="currentPage"
+        (paginate)="paginate($event)"
+    ></app-pagination>
+
+</div>
+
