@@ -83,8 +83,6 @@ Backend API: http://localhost:8080
 
 ## 🚀 Future Improvements
 
-Advanced search & filtering for rooms.
-
 Multi-language support.
 
 Dockerize full application for deployment.
