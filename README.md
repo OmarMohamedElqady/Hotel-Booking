@@ -62,15 +62,17 @@ cd Hotel-Booking
 ```
 
 ### 2️⃣ Backend Setup (Spring Boot)
+```bash
 cd HotelBooking_backend
 # Configure MySQL database in application.properties
 mvn spring-boot:run
-
+```
 ### 3️⃣ Frontend Setup (Angular)
+```bash
 cd HotelApp_frontend
 npm install
 ng serve -o
-
+```
 
 ### 4️⃣ Access the App
 
@@ -86,5 +88,10 @@ Advanced search & filtering for rooms.
 Multi-language support.
 
 Dockerize full application for deployment.
+
+## 👨‍💻Author
+
+#### Omar Mohamed Elqady
+Full-Stack Developer | Angular • Spring Boot • SQL/NoSQL
 
 
